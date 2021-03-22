@@ -3,8 +3,8 @@ import axios from 'axios';
 
 const projectID = '012bfa49-a6bc-44f2-b7ab-ffb713f95e68';
 const LoginForm = () => {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    const [username, setUsername] = useState('guest');
+    const [password, setPassword] = useState('123123');
     const [error, setError] = useState('');
     
     const handleSubmit = async (e) => {

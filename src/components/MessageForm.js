@@ -23,7 +23,7 @@ const MessageForm = (props) => {
         sendMessage(creds, chatId, { files: event.target.files, text : '' })
     }
     return (
-        <form className="message-form" onSubmit={handleSubmit}>
+        <form className="message-form" onSubmit={handleSubmit} >
             <input 
                 className="message-input"
                 placeholder="Send a message ..."
