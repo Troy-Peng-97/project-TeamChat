@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 
-const projectID = '012bfa49-a6bc-44f2-b7ab-ffb713f95e68';
+const projectID = '58808ee8-be29-41bc-97d0-6ded1420e883';
 const LoginForm = () => {
     const [username, setUsername] = useState('guest');
     const [password, setPassword] = useState('123123');
@@ -17,7 +17,7 @@ const LoginForm = () => {
     
           localStorage.setItem('username', username);
           localStorage.setItem('password', password);
-    
+          console.log(username, password);
           window.location.reload();
           setError('');
         } catch (err) {

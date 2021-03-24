@@ -9,11 +9,12 @@ const App = () => {
     return (
         <ChatEngine 
             height="100vh"
-            projectID="012bfa49-a6bc-44f2-b7ab-ffb713f95e68"
-            userName="troyqk"
-            userSecret="123123"
+            projectID="58808ee8-be29-41bc-97d0-6ded1420e883"
+            userName={localStorage.getItem('username')}
+            userSecret={localStorage.getItem('password')}
             renderChatFeed={(chatAppProps) => <ChatFeed {... chatAppProps} />}
-            renderOptionsSettings={() => <Options />}
+            renderNewChatForm={() => <Options />}
+            onNewMessage={() => new Audio('https://chat-engine-assets.s3.amazonaws.com/click.mp3').play()}
         />
     )
 }
