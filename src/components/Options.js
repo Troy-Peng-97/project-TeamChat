@@ -1,5 +1,4 @@
 const Options = () => {
-    console.log("i am available");
     const handleLogout = () => {
         localStorage.clear();
         window.location.reload();
