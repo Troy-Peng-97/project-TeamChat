@@ -5,9 +5,9 @@
 **Demo:**
 
 <span>
-  <img src="Auth.png" width="450" height="340"/>
+  <img src="Auth.png"/>
   <i> &nbsp <i/>
-  <img src="Chats.png" width="450" height="340"/>
+  <img src="Chats.png"/>
 </span>
 
 
